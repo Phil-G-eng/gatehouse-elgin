@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gatehouse, Elgin — Luxury Short Stay in the Heart of Moray, Scotland</title>
+<meta name="description" content="A beautifully appointed private gatehouse in Elgin, Moray. Perfect for couples exploring the Scottish Highlands — fishing, hill walking, dolphin watching and Speyside whisky. Book direct and save.">
+<meta name="keywords" content="accommodation Elgin Moray, short stay Elgin Scotland, holiday let Speyside, couples accommodation Highlands, self catering Elgin, dolphin watching Moray Firth, fishing Moray, Munro accommodation Scotland">
+<meta property="og:title" content="The Gatehouse, Elgin — Luxury Short Stay in Moray, Scotland">
+<meta property="og:description" content="A private gatehouse for two in the heart of Elgin. Book direct for the best rate.">
+<meta property="og:image" content="https://elginlodge.com/images/Lodge_Entrance.jpg">
+<meta property="og:url" content="https://elginlodge.com">
+<link rel="canonical" href="https://elginlodge.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════
+   THE GATEHOUSE, ELGIN — Complete Stylesheet
+   Scottish Highland Luxury Aesthetic
+   ══════════════════════════════════════════ */
+
+:root {
+  --forest:    #1e2d1f;
+  --moss:      #3a5c3b;
+  --sage:      #7a9e7b;
+  --cream:     #f5f0e8;
+  --parchment: #ede5d4;
+  --slate:     #4a5568;
+  --warm:      #2c2416;
+  --gold:      #b8922a;
+  --gold-lt:   #d4a94a;
+  --white:     #ffffff;
+  --fd: 'Cormorant Garamond', Georgia, serif;
+  --fb: 'Jost', sans-serif;
+  --max: 1160px;
+  --ease: cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--fb);
+  background: var(--cream);
+  color: var(--warm);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── Utility ── */
+.container { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+.eyebrow {
+  font-family: var(--fb);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+h1,h2,h3,h4 { font-family: var(--fd); font-weight: 300; line-height: 1.12; }
+
+/* ── Navigation ── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 1.4rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: background 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.nav.scrolled {
+  background: rgba(30,45,31,0.96);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(184,146,42,0.2);
+}
+.nav-logo {
+  font-family: var(--fd); font-size: 1.5rem; font-weight: 400; font-style: italic;
+  color: var(--cream); text-decoration: none;
+}
+.nav-logo span { color: var(--gold); font-style: normal; }
+.nav-links { display: flex; align-items: center; gap: 2.2rem; list-style: none; }
+.nav-links a {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(245,240,232,0.75); text-decoration: none; transition: color 0.25s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-book {
+  background: var(--gold); color: var(--warm) !important;
+  padding: 0.55rem 1.4rem; border-radius: 1px;
+  transition: background 0.25s !important;
+}
+.nav-book:hover { background: var(--gold-lt) !important; }
+
+.hamburger {
+  display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px;
+}
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--cream); transition: 0.3s; }
+.mobile-menu {
+  display: none; position: fixed; inset: 0; z-index: 99;
+  background: var(--forest); flex-direction: column;
+  align-items: center; justify-content: center; gap: 2rem;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-family: var(--fd); font-size: 2rem; font-weight: 300; font-style: italic;
+  color: var(--cream); text-decoration: none; transition: color 0.25s;
+}
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-close {
+  position: absolute; top: 1.5rem; right: 2rem;
+  font-size: 1.8rem; color: var(--cream); cursor: pointer;
+  background: none; border: none; font-family: var(--fd);
+}
+
+/* ── Hero ── */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex; align-items: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(150deg, rgba(30,45,31,0.65) 0%, rgba(44,36,22,0.5) 55%, rgba(30,45,31,0.78) 100%),
+    url('images/Lodge_Entrance.jpg') center/cover no-repeat;
+}
+.hero-grain {
+  position: absolute; inset: 0; z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.hero-content {
+  position: relative; z-index: 2;
+  max-width: var(--max); margin: 0 auto; padding: 0 2rem;
+  padding-top: 7rem;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  border: 0.5px solid rgba(184,146,42,0.45);
+  padding: 0.4rem 1rem; border-radius: 50px;
+  font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.8rem;
+  animation: fadeUp 0.8s var(--ease) both;
+}
+.hero-tag-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--gold); animation: pulse 2.2s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  color: var(--cream); font-weight: 300; max-width: 740px;
+  line-height: 1.06; margin-bottom: 1.4rem;
+  animation: fadeUp 0.8s var(--ease) 0.1s both;
+}
+.hero h1 em { color: var(--gold); font-style: italic; }
+.hero-sub {
+  font-size: 1rem; color: rgba(245,240,232,0.72);
+  max-width: 460px; margin-bottom: 2.5rem;
+  animation: fadeUp 0.8s var(--ease) 0.2s both;
+}
+.hero-ctas {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  animation: fadeUp 0.8s var(--ease) 0.3s both;
+}
+.btn-primary {
+  display: inline-block; background: var(--gold); color: var(--warm);
+  padding: 0.9rem 2.2rem; border-radius: 1px;
+  font-family: var(--fb); font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
+.btn-ghost {
+  display: inline-block; background: transparent; color: var(--cream);
+  padding: 0.9rem 2.2rem; border-radius: 1px;
+  border: 0.5px solid rgba(245,240,232,0.45);
+  font-family: var(--fb); font-size: 0.78rem; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer;
+  transition: border-color 0.25s, color 0.25s;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-scroll {
+  position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+  z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+  color: rgba(245,240,232,0.45); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase;
+}
+.scroll-line {
+  width: 0.5px; height: 44px;
+  background: linear-gradient(to bottom, rgba(184,146,42,0.8), transparent);
+  animation: scrollAnim 2.2s ease-in-out infinite;
+}
+@keyframes scrollAnim {
+  0%{transform:scaleY(0);transform-origin:top}
+  50%{transform:scaleY(1);transform-origin:top}
+  51%{transform:scaleY(1);transform-origin:bottom}
+  100%{transform:scaleY(0);transform-origin:bottom}
+}
+
+/* ── Feature strip ── */
+.features {
+  background: var(--forest);
+  padding: 0;
+}
+.features-inner {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border: 0.5px solid rgba(184,146,42,0.15);
+}
+.feat {
+  padding: 2rem 1.8rem; text-align: center;
+  border-right: 0.5px solid rgba(184,146,42,0.15);
+}
+.feat:last-child { border-right: none; }
+.feat-icon { font-size: 1.5rem; display: block; margin-bottom: 0.75rem; }
+.feat h4 {
+  font-family: var(--fd); font-size: 1.05rem; font-weight: 400;
+  color: var(--cream); margin-bottom: 0.25rem;
+}
+.feat p { font-size: 0.78rem; color: rgba(245,240,232,0.5); line-height: 1.5; }
+
+/* ── About ── */
+.about { background: var(--parchment); padding: 7rem 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-images { position: relative; padding-bottom: 3rem; }
+.img-main {
+  width: 82%; aspect-ratio: 3/4; object-fit: cover;
+  display: block; border-radius: 1px;
+}
+.img-accent {
+  position: absolute; bottom: 0; right: 0;
+  width: 52%; aspect-ratio: 4/3; object-fit: cover;
+  border: 5px solid var(--parchment); border-radius: 1px;
+}
+.about-text h2 { font-size: clamp(1.9rem,3.5vw,3rem); color: var(--forest); margin-bottom: 1.4rem; }
+.about-text p { color: var(--slate); margin-bottom: 1.1rem; font-size: 0.97rem; }
+.about-stats {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem;
+  margin-top: 2.5rem; padding-top: 2rem;
+  border-top: 0.5px solid rgba(74,86,104,0.2);
+}
+.stat-n { font-family: var(--fd); font-size: 2.4rem; font-weight: 300; color: var(--gold); display: block; }
+.stat-l { font-size: 0.72rem; color: var(--slate); letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none;
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,0.92);
+  align-items: center; justify-content: center;
+  padding: 1rem;
+}
+.lightbox.open { display: flex; }
+.lightbox-inner {
+  position: relative;
+  max-width: 90vw; max-height: 90vh;
+  display: flex; flex-direction: column; align-items: center;
+}
+.lightbox-img {
+  max-width: 90vw; max-height: 80vh;
+  object-fit: contain; border-radius: 2px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.lightbox-caption {
+  color: rgba(245,240,232,0.7);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.82rem; letter-spacing: 0.1em;
+  text-transform: uppercase; margin-top: 1rem;
+}
+.lightbox-close {
+  position: fixed; top: 1.5rem; right: 2rem;
+  background: none; border: 0.5px solid rgba(245,240,232,0.3);
+  color: var(--cream); font-size: 1.4rem; width: 40px; height: 40px;
+  border-radius: 50%; cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+  transition: border-color 0.2s; line-height: 1;
+}
+.lightbox-close:hover { border-color: var(--gold); color: var(--gold); }
+.lightbox-prev, .lightbox-next {
+  position: fixed; top: 50%; transform: translateY(-50%);
+  background: rgba(30,45,31,0.7); border: 0.5px solid rgba(184,146,42,0.3);
+  color: var(--cream); font-size: 1.4rem; width: 48px; height: 48px;
+  border-radius: 50%; cursor: pointer; display: flex;
+  align-items: center; justify-content: center; transition: all 0.2s;
+}
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+.lightbox-prev:hover, .lightbox-next:hover {
+  background: var(--gold); border-color: var(--gold); color: var(--warm);
+}
+.lightbox-counter {
+  position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  color: rgba(245,240,232,0.45); font-size: 0.75rem; letter-spacing: 0.15em;
+  font-family: 'Jost', sans-serif;
+}
+
+/* ── Gallery ── */
+.gallery { background: var(--cream); padding: 7rem 0; }
+.gallery-header { text-align: center; margin-bottom: 3.5rem; }
+.gallery-header h2 { font-size: clamp(1.9rem,3.5vw,3rem); color: var(--forest); }
+.gallery-header p { color: var(--slate); max-width: 480px; margin: 0.8rem auto 0; font-size: 0.95rem; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-rows: 280px 280px;
+  gap: 1rem;
+}
+.gallery-item { overflow: hidden; border-radius: 1px; position: relative; cursor: pointer; }
+.gallery-item img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-item:first-child { grid-row: 1 / 3; }
+.gallery-caption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(transparent, rgba(30,45,31,0.65));
+  color: rgba(245,240,232,0.85); font-size: 0.75rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  opacity: 0; transition: opacity 0.3s;
+}
+.gallery-item:hover .gallery-caption { opacity: 1; }
+
+/* ── Area / Local ── */
+.area { background: var(--forest); padding: 7rem 0; }
+.area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.area h2 { font-size: clamp(1.9rem,3.5vw,3rem); color: var(--cream); margin-bottom: 1.2rem; }
+.area p { color: rgba(245,240,232,0.7); margin-bottom: 1rem; font-size: 0.97rem; }
+.area-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.8rem; }
+.area-tag {
+  display: inline-block; padding: 0.35rem 0.9rem;
+  border: 0.5px solid rgba(184,146,42,0.4); border-radius: 50px;
+  font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);
+}
+.area-img { aspect-ratio: 4/3; object-fit: cover; width: 100%; border-radius: 1px; }
+
+/* ── Booking Calendar ── */
+.booking-section { background: var(--cream); padding: 7rem 0; }
+.booking-header { text-align: center; margin-bottom: 4rem; }
+.booking-header h2 { font-size: clamp(1.9rem,3.5vw,3rem); color: var(--forest); }
+.booking-header p { color: var(--slate); max-width: 500px; margin: 0.8rem auto 0; }
+
+.booking-shell {
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: start;
+}
+
+/* Calendar */
+.cal-wrap {
+  background: var(--white); border: 0.5px solid rgba(74,86,104,0.15); border-radius: 2px;
+}
+.cal-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 0.5px solid rgba(74,86,104,0.1);
+  background: var(--forest);
+}
+.cal-head h3 { font-family: var(--fd); font-size: 1.2rem; font-weight: 400; color: var(--cream); }
+.cal-nav {
+  background: none; border: 0.5px solid rgba(245,240,232,0.3);
+  border-radius: 1px; color: var(--cream);
+  width: 32px; height: 32px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; transition: border-color 0.2s;
+}
+.cal-nav:hover { border-color: var(--gold); color: var(--gold); }
+.cal-grid { padding: 1.25rem 1.5rem; }
+.cal-days {
+  display: grid; grid-template-columns: repeat(7,1fr);
+  gap: 0; margin-bottom: 0.5rem;
+}
+.cal-day-label {
+  text-align: center; font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--slate); padding: 0.4rem 0;
+}
+.cal-cells { display: grid; grid-template-columns: repeat(7,1fr); gap: 3px; }
+.cal-cell {
+  aspect-ratio: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  font-size: 0.82rem; border-radius: 1px; cursor: pointer;
+  transition: background 0.15s, color 0.15s; position: relative;
+  padding: 2px;
+}
+.cal-cell:hover:not(.disabled):not(.booked):not(.booked-airbnb):not(.booked-bdc) { background: rgba(184,146,42,0.15); }
+.cal-cell.empty { cursor: default; }
+
+/* Past dates — faded */
+.cal-cell.disabled { color: rgba(74,86,104,0.25); cursor: not-allowed; }
+
+/* Available — subtle green tint so it reads as "open" */
+.cal-cell:not(.disabled):not(.booked):not(.booked-airbnb):not(.booked-bdc):not(.empty):not(.selected):not(.in-range):not(.check-in):not(.check-out) {
+  background: rgba(58,92,59,0.08);
+  color: var(--warm);
+}
+
+/* Direct / generic booked — mid grey, clear strikethrough */
+.cal-cell.booked {
+  background: #c8cdd4;
+  color: #555e6b;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  text-decoration-color: #888;
+}
+
+/* Airbnb — strong coral red, unmistakeable */
+.cal-cell.booked-airbnb {
+  background: #f4a494;
+  color: #7a1f0f;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  text-decoration-color: #c0392b;
+}
+
+/* Booking.com — strong blue */
+.cal-cell.booked-bdc {
+  background: #8ab3e8;
+  color: #0a2d6b;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  text-decoration-color: #1a4da0;
+}
+
+/* Selected by guest */
+.cal-cell.selected { background: var(--forest); color: var(--cream); }
+.cal-cell.in-range { background: rgba(30,45,31,0.15); color: var(--warm); }
+.cal-cell.check-in  { background: var(--forest); color: var(--cream); border-radius: 1px 0 0 1px; }
+.cal-cell.check-out { background: var(--forest); color: var(--cream); border-radius: 0 1px 1px 0; }
+
+/* Check-out landing on another booking's arrival day = a changeover morning.
+   Split the cell diagonally so it's clear the night itself belongs to the next
+   guest, while still reading as the end of this selection. */
+.cal-cell.check-out.booked-airbnb { background: linear-gradient(135deg, var(--forest) 0 50%, #f4a494 50% 100%); }
+.cal-cell.check-out.booked-bdc    { background: linear-gradient(135deg, var(--forest) 0 50%, #8ab3e8 50% 100%); }
+.cal-cell.check-out.booked,
+.cal-cell.check-out.booked-airbnb,
+.cal-cell.check-out.booked-bdc {
+  color: var(--cream);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cal-cell .day-price {
+  font-size: 0.52rem; color: var(--gold); line-height: 1;
+  margin-top: 1px; letter-spacing: 0;
+}
+.cal-cell.selected .day-price,
+.cal-cell.check-in .day-price,
+.cal-cell.check-out .day-price { color: rgba(245,240,232,0.6); }
+.cal-cell.booked .day-price,
+.cal-cell.booked-airbnb .day-price,
+.cal-cell.booked-bdc .day-price { display: none; }
+
+.cal-legend {
+  display: flex; gap: 1.2rem; padding: 0.75rem 1.5rem;
+  border-top: 0.5px solid rgba(74,86,104,0.1);
+  flex-wrap: wrap;
+}
+.leg-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.7rem; color: var(--slate); }
+.leg-dot { width: 10px; height: 10px; border-radius: 1px; flex-shrink: 0; }
+
+/* Booking panel */
+.bk-panel { display: flex; flex-direction: column; gap: 1rem; }
+
+.price-card {
+  background: var(--white); border: 0.5px solid rgba(74,86,104,0.15);
+  border-radius: 2px; padding: 1.4rem;
+}
+.price-card h4 {
+  font-family: var(--fd); font-size: 1.15rem; color: var(--forest);
+  margin-bottom: 1.1rem; padding-bottom: 0.75rem;
+  border-bottom: 0.5px solid rgba(74,86,104,0.1);
+}
+
+/* Pricing tiers */
+.tier-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.6rem 0; border-bottom: 0.5px solid rgba(74,86,104,0.07);
+}
+.tier-row:last-of-type { border-bottom: none; }
+.tier-label { font-size: 0.78rem; color: var(--slate); text-transform: uppercase; letter-spacing: 0.06em; }
+.tier-price-edit {
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.tier-price-edit span { font-family: var(--fd); font-size: 1.1rem; color: var(--forest); }
+.price-input {
+  font-family: var(--fd); font-size: 1.1rem; color: var(--forest);
+  width: 70px; text-align: right; border: none; border-bottom: 1px dashed rgba(184,146,42,0.4);
+  background: transparent; padding: 0 0 1px;
+  outline: none; cursor: text;
+}
+.price-input:focus { border-bottom-color: var(--gold); }
+
+.summary-box {
+  background: var(--forest); border-radius: 2px; padding: 1.25rem 1.4rem;
+}
+.sum-row {
+  display: flex; justify-content: space-between;
+  font-size: 0.85rem; color: rgba(245,240,232,0.75); padding: 0.3rem 0;
+}
+.sum-row.total {
+  border-top: 0.5px solid rgba(245,240,232,0.15);
+  margin-top: 0.5rem; padding-top: 0.75rem;
+  font-family: var(--fd); font-size: 1.4rem; color: var(--cream);
+}
+.sum-row.total span:last-child { color: var(--gold); }
+
+.guests-row { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.guest-btn {
+  flex: 1; padding: 0.65rem; border: 0.5px solid rgba(74,86,104,0.25);
+  border-radius: 1px; background: transparent; cursor: pointer;
+  font-family: var(--fb); font-size: 0.8rem; color: var(--slate);
+  transition: all 0.2s; letter-spacing: 0.05em;
+}
+.guest-btn.active { background: var(--forest); color: var(--cream); border-color: var(--forest); }
+
+.min-stay-note {
+  font-size: 0.75rem; color: var(--slate); text-align: center; padding: 0.5rem 0;
+}
+
+.policy-mini {
+  background: rgba(184,146,42,0.06); border-left: 2px solid var(--gold);
+  padding: 0.75rem 1rem; border-radius: 0 2px 2px 0; font-size: 0.78rem;
+  color: var(--slate); line-height: 1.6;
+}
+
+/* ── Reviews ── */
+.reviews { background: var(--parchment); padding: 7rem 0; }
+.reviews-header { text-align: center; margin-bottom: 4rem; }
+.reviews-header h2 { font-size: clamp(1.9rem,3.5vw,3rem); color: var(--forest); }
+.reviews-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.review-card {
+  background: var(--white); border: 0.5px solid rgba(74,86,104,0.12);
+  border-radius: 2px; padding: 1.75rem;
+}
+.review-stars { color: var(--gold); font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 1rem; }
+.review-text { font-family: var(--fd); font-size: 1.05rem; font-style: italic; color: var(--warm); line-height: 1.65; margin-bottom: 1.2rem; }
+.review-author { font-size: 0.78rem; color: var(--slate); letter-spacing: 0.05em; }
+.review-source { font-size: 0.68rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem; }
+
+/* ── Local attractions ── */
+.local { background: var(--cream); padding: 7rem 0; }
+.local-header { text-align: center; margin-bottom: 3.5rem; }
+.local-header h2 { font-size: clamp(1.9rem,3.5vw,3rem); color: var(--forest); }
+.local-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; }
+.local-card {
+  border: 0.5px solid rgba(74,86,104,0.12); border-radius: 2px;
+  background: var(--white); overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.local-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(30,45,31,0.1); }
+.local-img-wrap {
+  background: #1e2d1f;
+  height: 200px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.local-img {
+  width: 100%; height: 100%;
+  object-fit: contain; object-position: center;
+  transition: transform 0.5s;
+}
+.local-card:hover .local-img { transform: scale(1.03); }
+.local-text { padding: 0.9rem 1rem 1.1rem; }
+.local-tag { display: inline-block; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; }
+.local-card h4 { font-family: var(--fd); font-size: 1.05rem; color: var(--forest); margin-bottom: 0.3rem; }
+.local-card p { font-size: 0.78rem; color: var(--slate); line-height: 1.5; }
+
+/* ── Contact / CTA ── */
+.cta-section { background: var(--forest); padding: 6rem 0; text-align: center; }
+.cta-section h2 { font-size: clamp(2rem,4vw,3.5rem); color: var(--cream); margin-bottom: 1rem; }
+.cta-section h2 em { color: var(--gold); }
+.cta-section p { color: rgba(245,240,232,0.65); max-width: 480px; margin: 0 auto 2.5rem; }
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ── Footer ── */
+footer {
+  background: var(--warm); color: rgba(245,240,232,0.55);
+  padding: 3rem 0 2rem;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+.footer-logo {
+  font-family: var(--fd); font-size: 1.4rem; font-style: italic;
+  color: var(--cream); margin-bottom: 0.75rem; display: block;
+}
+.footer-logo span { color: var(--gold); font-style: normal; }
+.footer-col h5 {
+  font-family: var(--fb); font-size: 0.68rem; font-weight: 500;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1rem;
+}
+.footer-col a, .footer-col p {
+  display: block; font-size: 0.85rem; color: rgba(245,240,232,0.55);
+  text-decoration: none; margin-bottom: 0.4rem; transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--cream); }
+.footer-bottom {
+  border-top: 0.5px solid rgba(245,240,232,0.08);
+  padding-top: 1.5rem;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  font-size: 0.75rem;
+}
+.footer-bottom a { color: rgba(245,240,232,0.4); text-decoration: none; }
+.footer-bottom a:hover { color: var(--cream); }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .booking-shell { grid-template-columns: 1fr; }
+  .about-grid, .area-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .img-accent { display: none; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .gallery-item:first-child { grid-row: auto; }
+  .reviews-grid { grid-template-columns: 1fr 1fr; }
+  .local-grid { grid-template-columns: repeat(2,1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .features-inner { grid-template-columns: repeat(2,1fr); }
+  .feat:nth-child(2) { border-right: none; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .local-grid { grid-template-columns: repeat(2,1fr); }
+  .about-stats { grid-template-columns: repeat(3,1fr); }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; }
+  .hero h1 { font-size: 2.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">The <span>Gatehouse</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">The Gatehouse</a></li>
+    <li><a href="#area">The Area</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="https://www.airbnb.co.uk/rooms/YOUR-LISTING-ID" target="_blank" rel="noopener" class="nav-book">Book direct</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#gallery" onclick="toggleMenu()">The Gatehouse</a>
+  <a href="#area" onclick="toggleMenu()">The Area</a>
+  <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+  <a href="https://www.airbnb.co.uk/rooms/YOUR-LISTING-ID" target="_blank" rel="noopener" onclick="toggleMenu()">Book direct</a>
+</div>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <div class="hero-tag-dot"></div>
+      Elgin · Moray · Scotland
+    </div>
+    <h1>A Highland retreat<br>in the <em>heart of Moray</em></h1>
+    <p class="hero-sub">A beautifully appointed private gatehouse for two — ten minutes from the Moray Firth coast and within an hour of the Cairngorms. Perfectly placed for world-class fishing, Munro bagging, dolphin watching, and some of Scotland's finest whisky.</p>
+    <div class="hero-ctas">
+      <a href="https://www.airbnb.co.uk/rooms/YOUR-LISTING-ID" target="_blank" rel="noopener" class="btn-primary">Book on Airbnb</a>
+      <a href="#about" class="btn-ghost">Discover the gatehouse</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- Feature strip -->
+<section class="features">
+  <div class="container">
+    <div class="features-inner">
+      <div class="feat">
+        <span class="feat-icon">🎣</span>
+        <h4>World-class fishing</h4>
+        <p>Spey, Findhorn &amp; Lossie on your doorstep</p>
+      </div>
+      <div class="feat">
+        <span class="feat-icon">🦬</span>
+        <h4>Wildlife & dolphins</h4>
+        <p>Moray Firth dolphins just 8 miles away</p>
+      </div>
+      <div class="feat">
+        <span class="feat-icon">🥃</span>
+        <h4>Whisky country</h4>
+        <p>Heart of the Speyside whisky trail</p>
+      </div>
+      <div class="feat">
+        <span class="feat-icon">🏔️</span>
+        <h4>Munros & walking</h4>
+        <p>Cairngorms National Park nearby</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images">
+        <img src="images/Gallery_9.jpg" alt="Jackie at the Moray Firth coast" class="img-main" loading="lazy">
+        <img src="images/Bed_Wardrobes.jpg" alt="Bespoke fitted bedroom furniture" class="img-accent" loading="lazy">
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">Your hosts</span>
+        <h2>Hosted by Jackie & Phil — a home away from home</h2>
+        <p>The Gatehouse is a privately owned retreat in the heart of Elgin, created by Phil and Jackie as a home away from home for guests who want more than a hotel room. Phil built much of what you see — the bespoke fitted furniture, the oak flooring, the kitchen — with his own hands.</p>
+        <p>Everything you need is here — quality linen, a space to relax, to prepare and eat meals, fast Wi-Fi, and genuine local knowledge from people who spend their weekends on these rivers, roads and hillsides.</p>
+        <p>Whether you're arriving by bike along the Cairngorms roads, casting a line on the Spey, or simply escaping for a quiet break in one of Scotland's finest corners — we'd love to have you.</p>
+        <div class="about-stats">
+          <div>
+            <span class="stat-n">2</span>
+            <span class="stat-l">Max guests</span>
+          </div>
+          <div>
+            <span class="stat-n">2–28</span>
+            <span class="stat-l">Night stays</span>
+          </div>
+          <div>
+            <span class="stat-n">★ 5.0</span>
+            <span class="stat-l">Guest rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="eyebrow">Inside the gatehouse</span>
+      <h2>Every detail considered</h2>
+      <p>Quality furnishings, natural materials, and a warm Scottish palette throughout.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-src="images/Lounge.jpg" data-caption="Living & dining" style="cursor:zoom-in">
+        <img src="images/Lounge.jpg" alt="Living and dining area" loading="lazy">
+        <div class="gallery-caption">Living & dining</div>
+      </div>
+      <div class="gallery-item" data-src="images/BED3.jpg" data-caption="Bedroom" style="cursor:zoom-in">
+        <img src="images/BED3.jpg" alt="Bedroom with vaulted ceiling" loading="lazy">
+        <div class="gallery-caption">Bedroom</div>
+      </div>
+      <div class="gallery-item" data-src="images/Living_1.jpg" data-caption="Kitchen" style="cursor:zoom-in">
+        <img src="images/Living_1.jpg" alt="Kitchen with island and skylight" loading="lazy">
+        <div class="gallery-caption">Kitchen</div>
+      </div>
+      <div class="gallery-item" data-src="images/Bathroom.jpg" data-caption="Ensuite" style="cursor:zoom-in">
+        <img src="images/Bathroom.jpg" alt="Your own Bathroom" loading="lazy">
+        <div class="gallery-caption">Ensuite</div>
+      </div>
+      <div class="gallery-item" data-src="images/Garden.jpg" data-caption="Garden & outdoor seating" style="cursor:zoom-in">
+        <img src="images/Garden.jpg" alt="Garden with seating and apple tree" loading="lazy">
+        <div class="gallery-caption">Garden & outdoor seating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Area -->
+<section class="area" id="area">
+  <div class="container">
+    <div class="area-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Moray & the Highlands</span>
+        <h2>One of Scotland's best-kept secrets</h2>
+        <p>Elgin sits at the heart of Moray — a region of extraordinary variety. Within an hour you have the Moray Firth coast with its famous bottle-nosed dolphins, the Cairngorms National Park, the River Spey (one of Scotland's finest salmon rivers), and more whisky distilleries than anywhere else on earth.</p>
+        <p>Elgin is a quietly charming market town — unhurried and unpretentious. You'll find the magnificent ruined cathedral, the Johnsons of Elgin woollen mill, a fascinating car museum, and all the shops and supermarkets you need to stock up before heading out to the surrounding countryside. It's not Inverness — and that's rather the point.</p>
+        <div class="area-tags">
+          <span class="area-tag">Fishing</span>
+          <span class="area-tag">Dolphins</span>
+          <span class="area-tag">Whisky trail</span>
+          <span class="area-tag">Hill walking</span>
+          <span class="area-tag">Munros</span>
+          <span class="area-tag">Architecture</span>
+          <span class="area-tag">Wildlife</span>
+          <span class="area-tag">Beaches</span>
+        </div>
+      </div>
+      <div>
+        <img src="images/Gallery_4.jpg" alt="Lossiemouth estuary at sunset" class="area-img" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-header">
+      <span class="eyebrow">Guest reviews</span>
+      <h2>What our guests say</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"An absolute gem. The lodge was spotless, wonderfully warm and had everything we needed. Jackie and Phil were perfect hosts — helpful without being intrusive. We'll be back."</p>
+        <div class="review-author">Sarah & James, Nottingham</div>
+        <div class="review-source">Airbnb · 5 stars</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Stayed for a week's fishing on the Spey. The location is perfect — everything is close and the area is stunning. The accommodation is well above average for a self-catering let."</p>
+        <div class="review-author">Gordon M., Edinburgh</div>
+        <div class="review-source">Booking.com · 9.8/10</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Beautifully presented and in a great location for exploring Speyside and the coast. The dolphins at Chanonry Point were a highlight. Would highly recommend to anyone visiting Moray."</p>
+        <div class="review-author">Helen & David, York</div>
+        <div class="review-source">Airbnb · 5 stars</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Local -->
+<section class="local">
+  <div class="container">
+    <div class="local-header">
+      <span class="eyebrow">Things to do</span>
+      <h2>Explore Moray &amp; the Highlands</h2>
+    </div>
+    <div class="local-grid">
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery_15.jpg" alt="Salmon leaping the falls" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Fishing</span>
+          <h4>River fishing</h4>
+          <p>The Spey, Findhorn and Lossie on your doorstep. World-class salmon, sea trout and brown trout fishing.</p>
+        </div>
+      </div>
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery_14.jpg" alt="Cardhu whisky tasting" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Whisky</span>
+          <h4>Speyside whisky trail</h4>
+          <p>Cardhu, Glenfiddich, Glen Grant and dozens more legendary distilleries, all within an easy drive.</p>
+        </div>
+      </div>
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery_3.jpg" alt="Skiing at Cairngorm Mountain" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Adventure</span>
+          <h4>Cairngorms National Park</h4>
+          <p>Skiing, walking, Munro bagging and wildlife all year round. Scotland's largest national park, under an hour away.</p>
+        </div>
+      </div>
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery_16.jpg" alt="White stag in moorland" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Wildlife</span>
+          <h4>Highland wildlife</h4>
+          <p>Red deer, Highland cattle, ospreys and bottle-nosed dolphins — Moray's wildlife is extraordinary year-round.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row -->
+    <div class="local-grid" style="margin-top:1.2rem">
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery_6.jpg" alt="Covesea beach, Moray coast" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Coast</span>
+          <h4>Moray coast & beaches</h4>
+          <p>Miles of unspoilt sandy beaches, dramatic rock arches and clifftop walks along the Moray Firth.</p>
+        </div>
+      </div>
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery.jpg" alt="Elgin Cathedral ruins" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Heritage</span>
+          <h4>Elgin Cathedral</h4>
+          <p>The magnificent 13th century ruined cathedral — known as the Lantern of the North — is a five-minute walk away.</p>
+        </div>
+      </div>
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery_5.jpg" alt="Highland cow on the Moray coast" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Wildlife</span>
+          <h4>Highland cattle</h4>
+          <p>Scotland's most iconic animals graze freely on the coastal farmland just minutes from Elgin.</p>
+        </div>
+      </div>
+      <div class="local-card">
+        <div class="local-img-wrap">
+          <img src="images/Gallery_13.jpg" alt="Elgin Highland Games" class="local-img" loading="lazy">
+        </div>
+        <div class="local-text">
+          <span class="local-tag">Events</span>
+          <h4>Local events</h4>
+          <p>Highland Games, beach motocross, husky racing, agricultural shows — Moray's calendar is packed year-round.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to <em>escape to Moray?</em></h2>
+    <p>Check availability and reserve your stay through our verified Airbnb listing — secure booking, guest protection, and one of Scotland's finest corners awaiting you.</p>
+    <div class="cta-btns">
+      <a href="https://www.airbnb.co.uk/rooms/YOUR-LISTING-ID" target="_blank" rel="noopener" class="btn-primary">Book on Airbnb</a>
+      <a href="mailto:bookings@elginlodge.com" class="btn-ghost">Send an enquiry</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">The <span>Gatehouse</span></span>
+        <p style="font-size:0.85rem;line-height:1.6">A private gatehouse for two in the heart of Elgin, Moray. Perfectly placed for exploring the Scottish Highlands.</p>
+        <p style="font-size:0.8rem;margin-top:0.8rem">
+          <a href="mailto:bookings@elginlodge.com" style="color:var(--gold);text-decoration:none">bookings@elginlodge.com</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>The gatehouse</h5>
+        <a href="#about">About us</a>
+        <a href="#gallery">Inside the gatehouse</a>
+        <a href="#reviews">Guest reviews</a>
+        <a href="https://www.airbnb.co.uk/rooms/YOUR-LISTING-ID" target="_blank" rel="noopener">Book direct</a>
+      </div>
+      <div class="footer-col">
+        <h5>The area</h5>
+        <a href="#area">Explore Moray</a>
+        <p>Speyside Whisky Trail</p>
+        <p>Moray Firth Dolphins</p>
+        <p>Cairngorms National Park</p>
+        <p>River Spey Fishing</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Gatehouse, Elgin · Moray, Scotland</span>
+      <div style="display:flex;gap:1.5rem">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="host.html">Host login</a>
+        <a href="https://www.airbnb.co.uk/rooms/YOUR-LISTING-ID" target="_blank" rel="noopener">Airbnb</a>
+        <a href="https://booking.com" target="_blank" rel="noopener">Booking.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
+  <button class="lightbox-prev" onclick="lightboxNav(-1)">&#8592;</button>
+  <button class="lightbox-next" onclick="lightboxNav(1)">&#8594;</button>
+  <div class="lightbox-inner">
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
+</div>
+
+<script>
+/* ════════════════════════════════════════
+   LIGHTBOX
+   ════════════════════════════════════════ */
+const galleryImages = [];
+let lbIndex = 0;
+
+function buildGalleryList() {
+  galleryImages.length = 0;
+  document.querySelectorAll('.gallery-item[data-src]').forEach(el => {
+    galleryImages.push({ src: el.dataset.src, caption: el.dataset.caption || '' });
+  });
+}
+
+function openLightbox(src, caption) {
+  buildGalleryList();
+  lbIndex = galleryImages.findIndex(g => g.src === src);
+  if (lbIndex < 0) lbIndex = 0;
+  showLightboxAt(lbIndex);
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function showLightboxAt(idx) {
+  lbIndex = ((idx % galleryImages.length) + galleryImages.length) % galleryImages.length;
+  const item = galleryImages[lbIndex];
+  document.getElementById('lightbox-img').src = item.src;
+  document.getElementById('lightbox-img').alt = item.caption;
+  document.getElementById('lightbox-caption').textContent = item.caption;
+  document.getElementById('lightbox-counter').textContent = (lbIndex + 1) + ' / ' + galleryImages.length;
+}
+
+function lightboxNav(dir) { showLightboxAt(lbIndex + dir); }
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  const lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'ArrowRight') lightboxNav(1);
+  if (e.key === 'ArrowLeft')  lightboxNav(-1);
+  if (e.key === 'Escape')     closeLightbox();
+});
+
+/* ════════════════════════════════════════
+   PAGE INITIALISATION — runs once DOM ready
+   ════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* 1. Nav scroll effect */
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  /* 2. Mobile menu */
+  window.toggleMenu = function() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  };
+
+  /* 3. Gallery lightbox click handlers */
+  document.querySelectorAll('.gallery-item[data-src]').forEach(el => {
+    el.style.cursor = 'zoom-in';
+    el.addEventListener('click', function() {
+      openLightbox(this.dataset.src, this.dataset.caption);
+    });
+  });
+
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+
+});
+</script>
+</body>
+</html>

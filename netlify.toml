@@ -1,0 +1,11 @@
+# ── Netlify configuration · The Gatehouse, Elgin ──
+# Declares where the serverless functions live so they actually deploy.
+# NOTE: plain web drag-and-drop does NOT deploy functions — use the
+# Netlify CLI (netlify deploy --prod) or a connected Git repo.
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
